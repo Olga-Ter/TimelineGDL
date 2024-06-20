@@ -1,0 +1,35 @@
+.odd-picture{
+  position: relative;
+  left: 0 !important;
+  width: calc(477px*1);
+  height: auto;
+  pointer-events: none;
+}
+
+.even-picture{
+  position: relative;
+  top: 165px;
+  left: 100% !important;
+  width: calc(477px*1);
+  height: auto;
+  transform: translate(-100%, 0);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .odd-picture{
+    width: 145px;
+    height: auto;
+    pointer-events: none;
+  }
+  
+  .even-picture{
+    position: relative;
+    top: 165px;
+    left: 100% !important;
+    width: calc(145px);
+    height: auto;
+    transform: translate(-100%, 0);
+    pointer-events: none;
+  }
+}
