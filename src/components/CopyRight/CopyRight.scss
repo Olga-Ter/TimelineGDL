@@ -1,0 +1,33 @@
+.copy-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #F2E2B1;
+}
+
+@media screen and (max-width: 767px) {
+  .copy-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 25vh;
+    z-index: 2;
+    font-family: 'Merriweather', serif;
+    font-size: 9px;
+    font-weight: 400;
+    color: #F2E2B1;
+  }
+}

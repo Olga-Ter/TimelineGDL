@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.app{
+    height: calc(18650px);
+    position: relative;
+    width: 100%;
+    background-image: url("./assets/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: visible
+}
+
+.app-wrapper{
+    position: relative;
+    height: calc(18483.29px);
+    width: 100%;
+    background-image: url("./assets/roads.png");
+    background-repeat: no-repeat;
+    background-position:center top 100vh;
+    z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .app{
+        height: calc(5120px);
+        overflow: hidden;
+    }
+    .app-wrapper {
+        position: relative;
+        height: 5300px;
+        width: 100%;
+        background-image: url("./assets/дорожки.svg");
+        background-position: center top 35vh;
+        background-repeat: no-repeat;
+        background-size: contain 10%;
+    }
+    
+}

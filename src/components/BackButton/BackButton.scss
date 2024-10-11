@@ -1,0 +1,46 @@
+.back-button-wrapper {
+  background-image: url("../../assets/вверх.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: fixed;  
+  top: 2vh;   
+  right: 20px; 
+  z-index: 5;
+  transform: rotateX(180deg);
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.back-button-sticky {
+  height: 8.7vh;
+  width: 15vw;
+}
+
+@media screen and (max-width: 767px) {
+  .back-button-sticky {
+    width: 19vw;
+  }
+  .back-button-wrapper {
+    background-image: url("../../assets/вверх.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: fixed;  
+    top: 4vh;   
+    right: 30px; 
+  }
+}

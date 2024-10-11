@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.info-page{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../assets/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  padding-top: 17vh;
+}
+
+.footer, .headerInfo{
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+
+.footer{
+  bottom: 0;
+  z-index: 1;
+  transform: rotateX(180deg);
+}
+
+.left{
+  h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #F2E2B1;
+  }
+  h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #F2E2B1;
+  }
+}
+
+.headerInfo{
+  top: 0px;
+  z-index: 1;
+}
+
+.info-page article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.info-page article .right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  padding: 1% 1%;
+  width: 55%;
+  height: 60vh;
+  background-image: url(../../../assets/bigpaper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  .crown{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    padding-left: 5vh;
+    padding-top: 3vh;
+  }
+}
+
+.text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh 2vh 2vh 3vh;
+  background-image: url(../../../assets/smallpaper.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  max-width: 100%;
+  max-height: 28vh;
+}
+
+.textWrapper {
+  width: 100%;
+  max-height: 21vh !important;
+  overflow: auto;
+}
+
+.info-page article{
+  width: 100%;
+  height: 80%;
+}
+
+.map{
+  height: 90%;
+}
+
+.map img{
+  height: 100%;
+}
+
+.textWrapper::-webkit-scrollbar-track {
+  background: rgb(209, 179, 122);
+}
+
+.textWrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(209, 179, 122);
+  border-radius: 10px;
+  width: 15px;
+  border: 3px solid rgb(102, 70, 0);
+}
+
+.textWrapper {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(102, 70, 0) rgb(209, 179, 122);
+}
+
+.crown img{
+  max-width: 100%;
+}
+
+.infoPrince{
+  height: 60vh;
+}
+
+@media screen and (max-width: 767px) {
+  .info-page article{
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 80% !important;
+  }
+  .info-page {
+    height: auto !important;
+    padding: 2vh 10px !important;
+  }
+  .infoPrince{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .prince-portrait-container{
+    width: 100%;
+    height: 70%;
+  }
+  .right{
+    height: 70vh !important;
+    width: 100% !important;
+    background-image: url(../../../assets/Контент.png) !important;
+    background-size:cover !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+    margin-top: 0 !important;
+    gap: 10%;
+  }
+  .map{
+    width: 40% !important;
+  }
+  .map img{
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .info-page article .right .crown {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .crown{
+    width:  50% !important;
+  }
+  .crown img{
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .mapWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .infoText{
+    width:100% !important;
+    margin: 0 !important;
+    margin-top: 2vh !important;
+    height: auto !important;
+  }
+  .textWrapper{
+    height: 22vh;
+  }
+  .left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    h1{
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      color: #F2E2B1;
+    }
+    h2{
+      font-family: 'Inter', sans-serif;
+      font-weight: 200;
+      font-size: 32px;
+      color: #F2E2B1;
+    }
+  }
+  .headerInfo{
+    left: 0 !important;
+  }
+
+  .textWrapper{
+    max-height: 21vh;
+  }
+
+  .footer{
+    left: 0 !important;
+  }
+}
+
+

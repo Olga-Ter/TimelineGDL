@@ -1,0 +1,85 @@
+.pardropdown-wrapper {
+  position: relative;
+  height: 50vh;
+  width: 13vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  top: 10vh;
+  left: 7vw;
+}
+
+.pardropdown-items {
+  position: relative;
+  height: 8.7vh;
+  width: 13vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/navbutton.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 1vh;
+  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #3E1208;
+  text-decoration: none;
+}
+
+.pardropdown-button {
+  height: 8.7vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/navbutton.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 36px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #3E1208;
+  margin-bottom: 1vh;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pardropdown-wrapper {
+    // width: 80px;
+    top: auto;
+    left: auto;
+  }
+  .pardropdown-button {
+    margin-bottom: -1vh;
+    width: 60px;
+    font-size: 14px;
+    height: 7vh;
+  }
+  .pardropdown-items {
+    height: 3vh;
+    width: 60px;
+    background-color: transparent;
+    margin-bottom: 1vh;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #3E1208;
+    text-decoration: none;
+    padding: 0.5em 0;
+    background-size: contain;
+  }
+}
