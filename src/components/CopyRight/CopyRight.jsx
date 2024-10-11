@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./CopyRight.scss";
-import img from "../../assets/mrk.svg"
+import img from "../../assets/mrk.svg";
 
 export function CopyRight() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -12,18 +12,16 @@ export function CopyRight() {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
     <div className="copy-right">
-      {!isSmallScreen && (
-      <img src={img} alt="" />
-      )}
-      <p>Copyright © Гуринович Валерия Вячеславовна</p>
+      {!isSmallScreen && <img src={img} alt="" />}
+      <p>Copyright © Минский Радиотехнический Колледж</p>
     </div>
   );
 }
